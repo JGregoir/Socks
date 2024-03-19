@@ -16,12 +16,14 @@ namespace Socks
 			clothes.Add(new Cloth(0, "sock", "46", "blue"));
 			clothes.Add(new Cloth(1, "sock", "46", "blue"));
 			clothes.Add(new Cloth(2, "sock", "46", "blue"));
-			clothes.Add(new Cloth(-7, "sock", "46", "green"));
-			clothes.Add(new Cloth(3, "sock", "45", "red"));
-			clothes.Add(new Cloth(4, "sock", "42", "green"));
-			clothes.Add(new Cloth(4, "sock", "42", "green"));
-			clothes.Add(new Cloth(4, "sock", "42", "green"));
-			clothes.Add(new Cloth(15, "shirt", "42", "green"));
+			clothes.Add(new Cloth(3, "sock", "46", "green"));
+			clothes.Add(new Cloth(4, "sock", "45", "red"));
+			clothes.Add(new Cloth(5, "sock", "45", "violet"));
+			clothes.Add(new Cloth(6, "sock", "42", "green"));
+			clothes.Add(new Cloth(7, "sock", "42", "green"));
+			clothes.Add(new Cloth(8, "sock", "42", "green"));
+			clothes.Add(new Cloth(9, "sock", "42", "green"));
+			clothes.Add(new Cloth(10, "shirt", "42", "green"));
 		}
 
 		public void Sort()
@@ -43,14 +45,14 @@ namespace Socks
 				}
 			}
 
-			foreach (var cloth in clothes.Where(c => c.Name == "sock" ))
+			foreach (var cloth in clothes.Where(c => c.Name == "sock"))
 			{
 				Console.WriteLine(cloth);
 			}
 
 			////single is great :
 			//Console.WriteLine("Is the sock 45 alone and in there? : ");
-			//var q = clothes.Where(x => x.Size=="45").Single();
+			//var q = clothes.Where(x => x.Size == "45").FirstOrDefault();
 			//if (q == null)
 			//	Console.WriteLine("No single sock in 45");
 			//else { Console.WriteLine("Here is one : " + q.Id); }
